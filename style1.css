@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(50px, min-content);
+  height: inherit;
+}
+
+.container > * {
+}
+
+header,
+main {
+  /* column-span: 4; */
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: coral;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 10px 20px;
+}
+
+nav {
+  background: #136fd2;
+  transition: transform 0.3s ease-in-out;
+  top: 56px;
+  bottom: 0;
+  min-height: calc(100vh - 56px); /* override Safari bug */
+  position: fixed; /* or choose `absolute` depending on desired behavior*/
+  width: 80vw;
+  right: -80vh;
+  transition: 0.5s ease-in-out;
+}
+
+.show {
+  right: 0;
+}
+
+main {
+  color: #353535;
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: 20px;
+  background: #d0cfc5;
+  overflow: auto;
+  /* height: auto; */
+}
