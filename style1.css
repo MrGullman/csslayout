@@ -11,6 +11,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: minmax(50px, min-content);
   height: inherit;
+  position: fixed;
 }
 
 .container > * {
@@ -22,10 +23,12 @@ main {
 }
 
 header {
+  /* position: fixed; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: coral;
+  width: 100%;
+  background-color: lightsalmon;
   font-size: 1.5rem;
   line-height: 1.5;
   padding: 10px 20px;
