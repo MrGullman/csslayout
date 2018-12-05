@@ -12,6 +12,8 @@ body {
   height: 100%;
   position: relative;
   touch-action: auto;
+  /* overflow: scroll;
+  -webkit-overflow-scrolling: touch; */
   /* top: 0;
   bottom: 0;
   left: 0;
@@ -23,9 +25,8 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: minmax(50px, min-content); */
   height: 100%;
-  position: fixed;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
+
   /* padding: 0; */
 }
 
@@ -74,8 +75,8 @@ main {
   /* padding: 20px; */
   background: #d0cfc5;
   overflow: auto;
-  border-top: 6px solid olivedrab;
-  border-bottom: 6px solid olivedrab;
+  border-top: 6px solid palevioletred;
+  border-bottom: 6px solid palevioletred;
   /* height: auto; */
 }
 
