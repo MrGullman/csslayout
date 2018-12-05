@@ -7,3 +7,30 @@ body {
   height: 100%;
   background-color: aquamarine;
 }
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: blueviolet;
+  color: #fff;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  height: inherit;
+}
+
+section {
+  height: calc(100% - 50px);
+}
