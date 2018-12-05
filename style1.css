@@ -2,15 +2,22 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   height: 100vh;
 }
 
+body {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(50px, min-content);
-  height: inherit;
+  grid-template-rows: minmax(50px, min-content); */
+  height: 100%;
   position: fixed;
 }
 
@@ -32,6 +39,7 @@ header {
   font-size: 1.5rem;
   line-height: 1.5;
   padding: 10px 20px;
+  height: 60px;
 }
 
 nav {
@@ -51,13 +59,20 @@ nav {
 }
 
 main {
+  height: calc(100% - 60px);
   color: #353535;
   font-size: 1.2em;
   line-height: 1.5;
   padding: 20px;
   background: #d0cfc5;
   overflow: auto;
+  border-top: 6px solid rebeccapurple;
+  border-bottom: 6px solid rebeccapurple;
   /* height: auto; */
+}
+
+main p {
+  margin: auto;
 }
 
 .scroll-arrow {
