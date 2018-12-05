@@ -3,14 +3,18 @@
 }
 
 html {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
+  font-size: 100%;
 }
 
 body {
-  top: 0;
+  height: 100%;
+  position: relative;
+  /* top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
 }
 
 .container {
@@ -19,6 +23,7 @@ body {
   grid-template-rows: minmax(50px, min-content); */
   height: 100%;
   position: fixed;
+  /* padding: 0; */
 }
 
 .container > * {
