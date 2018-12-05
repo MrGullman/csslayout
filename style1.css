@@ -63,12 +63,17 @@ main {
   color: #353535;
   font-size: 1.2em;
   line-height: 1.5;
-  padding: 20px;
+  /* padding: 20px; */
   background: #d0cfc5;
   overflow: auto;
   border-top: 6px solid rebeccapurple;
   border-bottom: 6px solid rebeccapurple;
   /* height: auto; */
+}
+
+main section {
+  height: 100%;
+  padding: 20px;
 }
 
 main p {
