@@ -48,8 +48,8 @@ header {
   right: 0;
   width: 100%;
   height: 50px;
-  /* background-color: rgba(255, 255, 255, 0.9); */
-  background-color: purple;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* background-color: purple; */
   color: #fff;
   z-index: 9999;
 }
@@ -59,6 +59,15 @@ header .logo {
   padding-left: 10px;
   color: #333;
   font-size: 1.8rem;
+  display: inline-block;
+  height: 30px;
+  width: auto;
+}
+
+header .logo img {
+  display: inline-block;
+  height: 30px;
+  width: auto;
 }
 
 header .menu-toggle {
@@ -89,6 +98,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   min-height: calc(100% - 50px);
+  padding: 1rem;
 }
 
 section.welcome-text {
@@ -145,7 +155,7 @@ section.welcome-text .comment p.name::before {
 
 section.event-container {
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
   justify-content: start;
 }
 
@@ -155,10 +165,81 @@ section.event-container .event-list {
 }
 
 section.event-container .event-list .event-item {
-  display: block;
-  background-color: aqua;
-  height: 150px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 250px;
   margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+section.event-container .event-list .event-item h3 {
+  position: absolute;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section.event-container .event-list .event-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Section */
+
+section.contact-container {
+  justify-content: flex-start;
+}
+
+section.contact-container .contact-info {
+  text-align: center;
+}
+
+section.contact-container .contact-info h2 {
+  font-size: 1.4rem;
+  padding: 2rem 0;
+}
+
+section.contact-container form {
+}
+
+section.contact-container .contact-field {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+section.contact-container .contact-field input,
+section.contact-container .contact-field textarea {
+  width: 100%;
+  line-height: 1.4rem;
+  font-size: 1.4rem;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: none;
+  font-weight: 300;
+  color: #222;
+}
+
+section.contact-container .contact-field label {
+  font-size: 0.9rem;
+  color: #333;
+  padding-bottom: 5px;
+}
+
+section.contact-container .contact-field > * {
+  display: block;
+}
+
+section.contact-container .contact-field input[type="submit"] {
+  background-color: orange;
+  color: #fff;
 }
 
 .section:first-of-type {

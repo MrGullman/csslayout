@@ -28,10 +28,10 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="bg"></div>
+    <!-- <div class="bg"></div> -->
     <div class="container">
       <header>
-        <div class="logo"><h1>LOGO</h1></div>
+        <div class="logo"><img src="img/logo.svg" alt="" /></div>
         <div class="menu-toggle"><i class="fas fa-bars"></i></div>
       </header>
 
@@ -62,34 +62,60 @@
 
         <section class="event-container">
           <ul class="event-list">
-            <li class="event-item"><p>Bubbleball</p></li>
-            <li class="event-item"><p>Archertag</p></li>
-            <li class="event-item"><p>Zorb</p></li>
-            <li class="event-item"><p>Hoppborgar</p></li>
-            <li class="event-item"><p>Segling</p></li>
-            <li class="event-item"><p>Popcorn Maskin</p></li>
+            <li class="event-item">
+              <img src="img/bb.jpg" alt="" />
+              <h3>Bubbleball</h3>
+            </li>
+            <li class="event-item">
+              <img src="img/at.jpg" alt="" />
+              <h3>Archertag</h3>
+            </li>
+            <li class="event-item">
+              <img src="img/zorb.jpg" alt="" />
+              <h3>Zorb</h3>
+            </li>
+            <li class="event-item">
+              <img src="img/hopp.jpg" alt="" />
+              <h3>Hoppborgar</h3>
+            </li>
+            <li class="event-item">
+              <img src="img/sail.jpg" alt="" />
+              <h3>Segling</h3>
+            </li>
+            <li class="event-item">
+              <img src="img/pc.jpg" alt="" />
+              <h3>Popcorn Maskin</h3>
+            </li>
           </ul>
         </section>
-        <section class="section">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima,
-            voluptas amet rerum iste quibusdam. Reiciendis dolorem neque
-            officiis magni, sint ex vitae! Quasi explicabo cum repellendus at
-            sequi harum illum cumque dolore perferendis a quidem culpa itaque
-            facilis, debitis quae nesciunt ratione adipisci quod ea nostrum
-            pariatur eligendi provident!
-          </p>
-        </section>
 
-        <section>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima,
-            voluptas amet rerum iste quibusdam. Reiciendis dolorem neque
-            officiis magni, sint ex vitae! Quasi explicabo cum repellendus at
-            sequi harum illum cumque dolore perferendis a quidem culpa itaque
-            facilis, debitis quae nesciunt ratione adipisci quod ea nostrum
-            pariatur eligendi provident!
-          </p>
+        <section class="contact-container">
+          <div class="contact-info">
+            <h2>
+              Kontakta oss om ni har frågot om bokningar eller olika
+              paketlösningar.
+            </h2>
+          </div>
+          <form>
+            <div class="contact-field">
+              <label for="name">Namn</label> <input name="name" type="text" />
+            </div>
+            <div class="contact-field">
+              <label for="email">Email</label>
+              <input name="email" type="email" />
+            </div>
+            <div class="contact-field">
+              <label for="phone">Telefonnr</label>
+              <input name="phone" type="number" />
+            </div>
+            <div class="contact-field">
+              <label for="message">Meddelande</label>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="contact-field">
+              <input type="submit" value="Skicka" />
+            </div>
+          </form>
         </section>
       </main>
     </div>
