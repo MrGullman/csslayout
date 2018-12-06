@@ -21,8 +21,9 @@ body {
   height: 100%;
   width: 100%;
   background-image: url("img/main_bg.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
+  background-size: cover;
 }
 
 .container {
