@@ -15,9 +15,11 @@ body {
 .bg {
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
+  /* right: 0;
+  bottom: 0; */
   left: 0;
+  height: 100%;
+  width: 100%;
   background-image: url("img/main_bg.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -72,12 +74,14 @@ nav {
   height: 100%;
 }
 
+/* Landing Section */
+
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  height: calc(100% - 50px);
+  min-height: calc(100% - 50px);
 }
 
 section.welcome-text {
@@ -127,10 +131,27 @@ section.welcome-text .comment p.name::before {
   height: 2px;
   width: 70%;
   top: 10px;
-  border-bottom: 1px solid orange;
+  border-bottom: 2px solid orange;
 }
 
-.section p {
+/* Event Section */
+
+section.event-container {
+  width: 100%;
+  padding: 1rem;
+  justify-content: start;
+}
+
+section.event-container .event-list {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+section.event-container .event-list .event-item {
+  display: block;
+  background-color: aqua;
+  height: 150px;
+  margin-bottom: 1rem;
 }
 
 .section:first-of-type {
