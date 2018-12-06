@@ -10,6 +10,11 @@ body {
 
 body {
   font-family: "Nunito", sans-serif;
+  background-image: url("img/main_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg {
@@ -20,10 +25,10 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("img/main_bg.jpg");
+  /* background-image: url("img/main_bg.jpg");
   background-attachment: scroll;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .container {
@@ -44,7 +49,7 @@ header {
   width: 100%;
   height: 50px;
   /* background-color: rgba(255, 255, 255, 0.9); */
-  background-color: brown;
+  background-color: purple;
   color: #fff;
   z-index: 9999;
 }
